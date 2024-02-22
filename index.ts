@@ -32,18 +32,18 @@ const foodAmountInt = createSelection([
 let foodString = "nothing"
 let foodTimeTotal = 0
 switch (foodSelectedInt.selectedIndex) {
-  case 0:
-    foodString = "sub"
-    foodTimeTotal = 60
-    break
-  case 1:
-    foodString = "pizza"
-    foodTimeTotal = 45
-    break
-  case 2:
-    foodString = "soup"
-    foodTimeTotal = 105
-    break
+case 0:
+  foodString = "sub"
+  foodTimeTotal = 60
+  break
+case 1:
+  foodString = "pizza"
+  foodTimeTotal = 45
+  break
+case 2:
+  foodString = "soup"
+  foodTimeTotal = 105
+  break
 }
 
 foodTimeTotal = foodTimeTotal * (1 + (0.5 * foodAmountInt.selectedIndex))
